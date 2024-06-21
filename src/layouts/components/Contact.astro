@@ -1,0 +1,54 @@
+---
+import Heading from "./Heading.astro";
+import { Image } from "astro:assets";
+import image from "@/images/person/contact.jpg";
+import vote from "@/images/vote.svg?raw";
+import Votes from "./Votes.astro";
+---
+
+<section class="bg-[#e7e7e7]" id="kontakt">
+  <div class="container py-16 md:py-32">
+    <div class="max-w-lg">
+      <Heading title="Nehmen Sie mit Green Clean Kontakt auf!" pre="Kontakt" />
+    </div>
+    <div class="grid md:gap-8 md:grid-cols-2">
+      <div>
+        <p class="mt-7">Ich freue mich auf Ihre Kontaktaufnahme.</p>
+        <p class="mt-2">
+          Info: Am
+          <b>26. Mai 2024 ist Kreistagswahl</b>. <br />Ich stehe auf Liste 3
+          Listenplatz 25. <br />
+          Über alle drei Stimmen würde ich mich sehr freuen.
+        </p>
+        <p class="mt-6">
+          <b
+            class="inline px-2 py-1 leading-none bg-secondary text-dark box-decoration-clone"
+          >
+            Kreistagswahl am 26. Mai 2024: Liste 3 Listenplatz 25: <br />
+            Alle drei Stimmen für Green Clean
+          </b>
+        </p>
+      </div>
+      <div class="mt-7">
+        <p>
+          E-Mail: <b>kontakt@steve-werner.com</b>
+        </p>
+        <div class="mt-4">
+          <Votes />
+        </div>
+      </div>
+    </div>
+    <div class="pt-12">
+      <div class="grid gap-8 md:grid-cols-2">
+        <div></div>
+        <div class="row-start-1 md:col-start-auto">
+          <Image
+            class="rounded-lg"
+            src={image}
+            alt="Green Clean bei der Feuerwehr"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
