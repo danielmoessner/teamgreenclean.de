@@ -1,0 +1,50 @@
+---
+const { id } = Astro.props;
+---
+
+<dialog
+  id={id}
+  class="fixed p-5 m-0 transform -translate-x-1/2 -translate-y-1/2 shadow left-1/2 top-1/2"
+>
+  <div class="prose">
+    <slot name="main" />
+  </div>
+  <form method="dialog">
+    <button
+      type="submit"
+      class="absolute top-0 right-0 p-2 text-gray-500 transition focus:outline-none hover:bg-gray-200"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18 18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+    <button
+      type="submit"
+      onclick="document.getElementById('kontakt').scrollIntoView({behavior: 'smooth'})"
+      class="underline text-emerald-900"
+    >
+      Jetzt Kontakt aufnehmen
+    </button>
+  </form>
+</dialog>
+
+<style>
+  dialog::backdrop {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+</style>

@@ -6,32 +6,101 @@ import image3 from "@/images/A7400784.jpg";
 import image4 from "@/images/A7401006.jpg";
 import image5 from "@/images/A7400741.jpg";
 import { Image } from "astro:assets";
+import Modal from "../components/Modal.astro";
 
 const services = [
   {
     title: "Gewerbeobjekte",
     description: "Praxen, Büros, Restaurants",
     image: image1,
+    text: `
+    <b>Gewerbeobjekte</b>
+    <p>
+    Gewerbeobjektreinigung von Green Clean: Ihre Experten für Sauberkeit!
+    </p>
+    <p>
+    Entdecken Sie die professionelle Gewerbeobjektreinigung von Green Clean in Dithmarschen, Nordfriesland und Umgebung. Wir bieten maßgeschneiderte Reinigungslösungen für Büros, Verkaufsflächen, Gastronomie, Praxen und Industriegebäude an. Unsere gründliche Reinigung verbessert die Luftqualität, reduziert Krankheitsrisiken und hinterlässt einen positiven Eindruck bei Kunden und Mitarbeitenden. Nutzen Sie auch unsere spezialisierten Dienstleistungen wie Bauendreinigung, Teppichreinigung, Fensterreinigung und Grundreinigung. 
+    </p>
+    <p>
+    Kontaktieren Sie uns noch heute und überzeugen Sie sich von unserer erstklassigen Sauberkeit und Hygiene. 
+    Green Clean - Ihr zuverlässiger Partner für Gewerbeobjektreinigung in Dithmarschen und Nordfriesland! … und alles wird clean!
+    </p>
+    `,
   },
   {
     title: "Privatobjekte",
     description: "Treppen / Treppenhäuser, Fenster, Grundreinigung, Sanitär",
     image: image2,
+    text: `
+    <b>Privatobjekte</b>
+    <p>
+    Privatobjektreinigung von Green Clean: Sauberkeit für Ihr Zuhause!
+    </p>
+    <p>
+    Ein sauberes, hygienisches Zuhause steigert das Wohlbefinden. Green Clean bietet die gründliche Reinigung von Wohnräumen, Teppichreinigung, Fensterreinigung und mehr in Dithmarschen, Nordfriesland und Umgebung. Unsere umweltfreundlichen Produkte und modernen Techniken garantieren erstklassige Ergebnisse.
+    </p>
+    <p>
+    Entdecken Sie unsere spezialisierten Dienstleistungen und genießen Sie Ihre Freizeit, während wir dafür sorgen, dass Ihr Zuhause eine Wohlfühl-Oase ist.
+    </p>
+    <p>
+    Kontaktieren Sie uns noch heute und lassen Sie Ihr Zuhause von unseren Experten reinigen.
+    Green Clean - Ihr Partner für Sauberkeit und Hygiene in Privathaushalten in Dithmarschen und Nordfriesland! … und alles wird clean!
+    </p>
+    `,
   },
   {
     title: "Hotel / Ferienwohnung",
     description: "Wäscheservice Bettwäsche von privaten Ferienwohnungen",
     image: image3,
+    text: `
+    <b>Hotel und Ferienwohnungen</b>
+    <p>
+    Hotel- und Ferienwohnungsreinigung von Green Clean: Perfekte Sauberkeit für Ihre Gäste!
+    </p>
+    <p>
+    Sie sorgen für das einzigartige Urlaubserlebnis Ihrer Gäste und wir kümmern uns um die zuverlässige und gründliche Reinigung Ihres Hotels und Ferienwohnung in Dithmarschen, Nordfriesland und Umgebung! Green Clean steht für makellose Sauberkeit und Hygiene, die Ihre Gäste begeistern wird! Unsere Reinigungsexperten befassen sich mit der gründlichen Zimmerreinigung, Teppichreinigung, Fensterreinigung und Wäscheservice - damit Sie sich voll und ganz auf Ihre Gäste konzentrieren können! Mit umweltfreundlichen Produkten und modernsten Techniken garantieren wir erstklassige Ergebnisse.
+    </p>
+    <p>
+    Entdecken Sie unsere umfassenden Reinigungslösungen und verbessern Sie das Gästeerlebnis in Ihrer Unterkunft. Kontaktieren Sie uns noch heute und lassen Sie Ihre Hotel- und Ferienwohnungen von unseren Experten reinigen. 
+    Green Clean - Ihr zuverlässiger Partner für Sauberkeit und Hygiene in Dithmarschen und Nordfriesland! … und alles wird clean!
+    </p>
+    `,
   },
   {
     title: "Bauendreinigung",
     description: "",
     image: image4,
+    text: `
+    <b>Bauendreinigung</b>
+    <p>
+    Bauendreinigung von Green Clean: Perfekte Sauberkeit nach dem Bau!
+    </p>
+    <p>
+    Green Clean kümmert sich um die professionelle Bauendreinigung in Dithmarschen, Nordfriesland und Umgebung. Sie haben keinen Stress nach Fertigstellung der Baustelle und können das fertige Ergebnis nach unserem umfassenden und hochwertigen Reinigungsservice genießen. Unsere Dienstleistungen beinhalten die gründliche Reinigung von Böden, Fenstern, Sanitäranlagen und allen Oberflächen. Mit unseren Reinigungsexperten und modernsten Techniken garantieren wir erstklassige Ergebnisse.
+    </p>
+    <p>
+    Kontaktieren Sie uns noch heute und lassen Sie Ihre Baustelle von unseren Experten reinigen. 
+    Green Clean - Ihr zuverlässiger Partner für Bauendreinigung in Dithmarschen und Nordfriesland! … und alles wird clean!
+    </p>
+    `,
   },
   {
     title: "Polster- und Teppichreinigungen",
     description: "",
     image: image5,
+    text: `
+    <b>Polster- und Teppichreinigung</b>
+    <p>
+    Polster- und Teppichreinigung von Green Clean: Frische und Hygiene für Ihr Zuhause!
+    </p>
+    <p>
+    Teppiche und Polster sind versteckte Keimherde, die man nicht immer im Blick hat. Unsere professionelle Polster- und Teppichreinigung sorgt für saubere, allergenfreie Polstermöbel und Teppiche, die Ihre Wohnqualität verbessern. Mit modernsten Techniken und umweltfreundlichen Produkten entfernen wir tief sitzenden Schmutz und hartnäckige Flecken.
+    </p>
+    <p>
+    Erleben Sie die Vorteile einer gründlichen Reinigung und entdecken Sie unsere weiteren Dienstleistungen, wie Büroreinigung, Fensterreinigung und Bauendreinigung. Kontaktieren Sie uns noch heute und lassen Sie Ihre Polster und Teppiche von unseren Experten reinigen. 
+    Green Clean - Ihr Partner für Sauberkeit und Hygiene in Dithmarschen und Nordfriesland!
+    </p>
+    `,
   },
 ];
 ---
@@ -42,9 +111,10 @@ const services = [
       <h2 class="text-5xl font-bold text-emerald-800">Was wir anbieten</h2>
       <Button />
     </div>
+
     <div class="grid grid-cols-3 gap-6 mt-8">
       {
-        services.map((s) => (
+        services.map((s, i) => (
           <div class="bg-white">
             <Image
               src={s.image}
@@ -55,7 +125,17 @@ const services = [
             <div class="p-6">
               <h3 class="text-2xl font-bold text-emerald-800">{s.title}</h3>
               <p class="text-gray-600">{s.description}</p>
+              <button
+                class="mt-2 font-medium underline text-emerald-900"
+                type="button"
+                onclick={`window.m${i}.showModal()`}
+              >
+                > Mehr dazu
+              </button>
             </div>
+            <Modal id={`m${i}`}>
+              <main slot="main" set:html={s.text} />
+            </Modal>
           </div>
         ))
       }
@@ -73,8 +153,112 @@ const services = [
               <li>Sanitär</li>
               <li>Wäscheservice Bettwäsche von privaten Ferienwohnungen</li>
             </ul>
+            <button
+              class="mt-2 font-medium underline text-emerald-900"
+              type="button"
+              onclick={`window.m${6}.showModal()`}
+            >
+              > Mehr dazu
+            </button>
           </p>
         </div>
+        <Modal id={`m${6}`}>
+          <main slot="main">
+            <div class="mb-5 prose">
+              <h3>Nebenaufgabengebiete</h3>
+              <h4>Praxen- und Therapieräume</h4>
+              <p>
+                Praxisreinigung von Green Clean: Hygienisch und Professionell
+              </p>
+              <p>
+                Unsere gründlichen und hygienischen Reinigungsdienste sorgen für
+                ein sauberes und gesundes Umfeld für Patienten und Personal in
+                Dithmarschen, Nordfriesland und Umgebung. Vertrauen Sie auf
+                unsere Erfahrung und Kompetenz. Kontaktieren Sie uns heute für
+                eine makellose Praxis! … und alles wird clean!
+              </p>
+              <h4>Büros</h4>
+              <p>Büroreinigung von Green Clean: Sauberkeit und Effizienz</p>
+              <p>
+                Eine saubere Arbeitsumgebung steigert die Produktivität und das
+                Wohlbefinden der Mitarbeitenden. Unsere gründlichen
+                Reinigungsdienste in Dithmarschen, Nordfriesland und Umgebung
+                schaffen eine angenehme Arbeitsatmosphäre. Vertrauen Sie auf
+                unsere Expertise für staubfreie, hygienische Büros. Kontaktieren
+                Sie uns noch heute … und alles wird clean!
+              </p>
+              <h4>Gastronomie</h4>
+              <p>
+                Restaurantreinigung von Green Clean: Hygienisch und makellos!
+              </p>
+              <p>
+                Wir bieten professionelle Reinigung für Restaurants in
+                Dithmarschen, Nordfriesland und Umgebung. Unsere gründlichen
+                Reinigungsdienste sorgen für eine hygienische und einladende
+                Atmosphäre, die Ihre Gäste begeistert. Überlassen Sie unseren
+                Reinigungsexperten die makellose Reinigung und Sie konzentrieren
+                sich auf das Wohlergehen Ihrer Gäste. Kontaktieren Sie uns noch
+                heute! … und alles wird clean!
+              </p>
+              <h4>Treppen/Treppenhäuser</h4>
+              <p>Treppenhausreinigung von Green Clean: Perfekte Sauberkeit!</p>
+              <p>
+                Treppen und Treppenhäuser sind häufiger Nutzung ausgesetzt.
+                Unsere gründlichen Reinigungsdienste sorgen für ein sauberes,
+                einladendes Erscheinungsbild in Dithmarschen, Nordfriesland und
+                Umgebung. Vertrauen Sie auf unsere Erfahrung für tadellose
+                Treppenhäuser. Kontaktieren Sie uns noch heute … und alles wir
+                clean!
+              </p>
+              <h4>Fenster</h4>
+              <p>Fensterreinigung von Green Clean: Glasklare Ergebnisse!</p>
+              <p>
+                Der Blick durch streifenfreie Fenster erhellt nicht nur die
+                Räumlichkeiten. Unsere gründlichen Reinigungsexperten für
+                Dithmarschen, Nordfriesland und Umgebung sorgen für
+                streifenfreie, glänzende Fenster und mehr Tageslicht. Vertrauen
+                Sie auf unsere Expertise für perfekte Sauberkeit und glasklare
+                Ergebnisse! Kontaktieren Sie uns noch heute … und alles wird
+                clean!
+              </p>
+              <h4>Grundreinigung</h4>
+              <p>
+                Grundreinigung von Green Clean: Tiefensauberkeit garantiert!
+              </p>
+              <p>
+                Eine Grundreinigung ist befreiend und bietet Ihnen ein
+                Rundum-sorglos-Gefühl. Wir bieten professionelle Grundreinigung
+                in Dithmarschen, Nordfriesland und Umgebung. Unsere umfassenden
+                Reinigungsdienste entfernen tief sitzenden Schmutz und sorgen
+                für hygienische Frische in Ihrem Objekt. Vertrauen Sie auf
+                unsere Expertise für makellose Sauberkeit. Kontaktieren Sie uns
+                noch heute ... und alles wird clean!
+              </p>
+              <h4>Sanitär</h4>
+              <p>Sanitärreinigung von Green Clean: Hygiene und Frische!</p>
+              <p>
+                Unsere Reinigungsexperten kümmern sich darum, dass Ihr
+                Sanitärbereich hygienisch sauber und frisch ist! Wir bieten
+                professionelle Sanitärreinigung in Dithmarschen, Nordfriesland
+                und Umgebung. Vertrauen Sie auf unsere Expertise für makellose
+                Sauberkeit. Kontaktieren Sie uns noch heute … und alles wird
+                clean!
+              </p>
+              <h4>Wäscheservice Bettwäsche von privaten Ferienwohnungen</h4>
+              <p>
+                Wäscheservice von Green Clean: Frische Bettwäsche für
+                Ferienwohnungen!
+              </p>
+              <p>
+                Der professionelle Wäscheservice/Wäscheverleih für Ihre
+                Ferienwohnungen in Dithmarschen, Nordfriesland und Umgebung
+                sorgt für frische, hygienische Bettwäsche für Ihre Gäste.
+                Vertrauen Sie auf unsere Expertise für perfekten Komfort.
+                Kontaktieren Sie uns noch heute … und alles wir clean!
+              </p>
+            </div>
+          </main>
+        </Modal>
       </div>
     </div>
   </div>
