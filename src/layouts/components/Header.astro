@@ -1,5 +1,6 @@
 ---
-
+import headerImg from "@/images/A7400626.jpg";
+import { Image } from "astro:assets";
 ---
 
 <section>
@@ -23,23 +24,24 @@
                   <h2
                     class="inline p-0.5 px-2 text-xl font-medium tracking-wide text-white uppercase box-decoration-clone bg-emerald-800"
                   >
-                    Professionelle Reinigung
+                    Willkommen bei
                   </h2>
                 </div>
               </div>
               <p class="mt-8 text-lg font-medium text-emerald-900">
-                Wir sorgen für ein positives Bild in einer Vielzahl von Gebäuden
-                in unserem Einzugsgebiet – und setzen Maßstäbe in Sachen
-                Hygiene, Reinigung und Sauberkeit. Ob Grundreinigung,
-                Glasreinigung, Unterhaltsreinigung, Treppenreinigung - alles
-                wird clean.
+                Ihrem vertrauenswürdigen Partner für hochwertigen
+                Reinigungsservice in Dithmarschen, Nordfriesland und Umgebung.
+                Unsere erfahrenen Reinigungsprofis nehmen sich zuverlässig ihren
+                individuellen Wünschen an und bieten einen hochwertigen
+                Reinigungsservice, der für Sauberkeit, Hygiene und Wohlbefinden
+                steht. Kommen Sie auf uns zu… und alles wird clean!
               </p>
             </div>
           </div>
           <div
             class="relative z-10 hidden col-span-12 pb-20 md:col-span-6 md:block"
           >
-            <img src="/images/clean-1.webp" alt="Header Bild" />
+            <Image class="shadow-sm" src={headerImg} width={418 * 2} alt="" />
           </div>
         </div>
       </div>
