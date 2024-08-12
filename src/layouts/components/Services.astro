@@ -23,7 +23,7 @@ const services = [
     </p>
     <p>
     Kontaktieren Sie uns noch heute und überzeugen Sie sich von unserer erstklassigen Sauberkeit und Hygiene. 
-    Green Clean - Ihr zuverlässiger Partner für Gewerbeobjektreinigung in Dithmarschen und Nordfriesland! … und alles wird clean!
+    Green Clean - Ihr zuverlässiger Partner für Gewerbeobjektreinigung in Dithmarschen und Nordfriesland! <span class="speak">… und alles wird clean!</span>
     </p>
     `,
   },
@@ -44,7 +44,7 @@ const services = [
     </p>
     <p>
     Kontaktieren Sie uns noch heute und lassen Sie Ihr Zuhause von unseren Experten reinigen.
-    Green Clean - Ihr Partner für Sauberkeit und Hygiene in Privathaushalten in Dithmarschen und Nordfriesland! … und alles wird clean!
+    Green Clean - Ihr Partner für Sauberkeit und Hygiene in Privathaushalten in Dithmarschen und Nordfriesland! <span class="speak">… und alles wird clean!</span>
     </p>
     `,
   },
@@ -62,7 +62,7 @@ const services = [
     </p>
     <p>
     Entdecken Sie unsere umfassenden Reinigungslösungen und verbessern Sie das Gästeerlebnis in Ihrer Unterkunft. Kontaktieren Sie uns noch heute und lassen Sie Ihre Hotel- und Ferienwohnungen von unseren Experten reinigen. 
-    Green Clean - Ihr zuverlässiger Partner für Sauberkeit und Hygiene in Dithmarschen und Nordfriesland! … und alles wird clean!
+    Green Clean - Ihr zuverlässiger Partner für Sauberkeit und Hygiene in Dithmarschen und Nordfriesland! <span class="speak">… und alles wird clean!</span>
     </p>
     `,
   },
@@ -80,7 +80,7 @@ const services = [
     </p>
     <p>
     Kontaktieren Sie uns noch heute und lassen Sie Ihre Baustelle von unseren Experten reinigen. 
-    Green Clean - Ihr zuverlässiger Partner für Bauendreinigung in Dithmarschen und Nordfriesland! … und alles wird clean!
+    Green Clean - Ihr zuverlässiger Partner für Bauendreinigung in Dithmarschen und Nordfriesland! <span class="speak">… und alles wird clean!</span>
     </p>
     `,
   },
@@ -105,11 +105,11 @@ const services = [
 ];
 ---
 
-<section class="py-32 bg-emerald-50" id="aufgabenbereiche">
+<section class="py-32 bg-primary" id="aufgabenbereiche">
   <div class="container">
     <div class="flex justify-between">
-      <h2 class="text-5xl font-bold text-emerald-800">Was wir anbieten</h2>
-      <Button />
+      <h2 class="text-5xl font-bold text-white">Was wir anbieten</h2>
+      <!-- <Button /> -->
     </div>
 
     <div class="grid grid-cols-3 gap-6 mt-8">
@@ -123,10 +123,10 @@ const services = [
               class="object-cover object-top w-full h-auto aspect-square"
             />
             <div class="p-6">
-              <h3 class="text-2xl font-bold text-emerald-800">{s.title}</h3>
+              <h3 class="text-2xl font-bold text-primary">{s.title}</h3>
               <p class="text-gray-600">{s.description}</p>
               <button
-                class="mt-2 font-medium underline text-emerald-900"
+                class="mt-2 font-medium underline text-primary"
                 type="button"
                 onclick={`window.m${i}.showModal()`}
               >
@@ -141,7 +141,7 @@ const services = [
       }
       <div class="bg-white">
         <div class="p-6">
-          <h3 class="text-2xl font-bold text-emerald-800">Weitere Gebiete</h3>
+          <h3 class="text-2xl font-bold text-primary">Weitere Gebiete</h3>
           <p class="text-gray-600">
             <ul class="pl-5 mt-4 text-lg text-gray-600 list-disc">
               <li>Praxen- und Therapieräume</li>
@@ -154,7 +154,7 @@ const services = [
               <li>Wäscheservice Bettwäsche von privaten Ferienwohnungen</li>
             </ul>
             <button
-              class="mt-2 font-medium underline text-emerald-900"
+              class="mt-2 font-medium underline text-primary"
               type="button"
               onclick={`window.m${6}.showModal()`}
             >
@@ -175,7 +175,9 @@ const services = [
                 ein sauberes und gesundes Umfeld für Patienten und Personal in
                 Dithmarschen, Nordfriesland und Umgebung. Vertrauen Sie auf
                 unsere Erfahrung und Kompetenz. Kontaktieren Sie uns heute für
-                eine makellose Praxis! … und alles wird clean!
+                eine makellose Praxis <span class="speak"
+                  >… und alles wird clean!</span
+                >
               </p>
               <h4>Büros</h4>
               <p>Büroreinigung von Green Clean: Sauberkeit und Effizienz</p>
@@ -185,7 +187,9 @@ const services = [
                 Reinigungsdienste in Dithmarschen, Nordfriesland und Umgebung
                 schaffen eine angenehme Arbeitsatmosphäre. Vertrauen Sie auf
                 unsere Expertise für staubfreie, hygienische Büros. Kontaktieren
-                Sie uns noch heute … und alles wird clean!
+                Sie uns noch heute <span class="speak"
+                  >… und alles wird clean!</span
+                >
               </p>
               <h4>Gastronomie</h4>
               <p>
@@ -198,7 +202,7 @@ const services = [
                 Atmosphäre, die Ihre Gäste begeistert. Überlassen Sie unseren
                 Reinigungsexperten die makellose Reinigung und Sie konzentrieren
                 sich auf das Wohlergehen Ihrer Gäste. Kontaktieren Sie uns noch
-                heute! … und alles wird clean!
+                heute! <span class="speak">… und alles wird clean!</span>
               </p>
               <h4>Treppen/Treppenhäuser</h4>
               <p>Treppenhausreinigung von Green Clean: Perfekte Sauberkeit!</p>
@@ -263,4 +267,4 @@ const services = [
     </div>
   </div>
 </section>
-<div class="w-full h-64 -mt-56 bg-emerald-900"></div>
+<div class="w-full h-64 -mt-56 bg-primary"></div>

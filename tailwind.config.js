@@ -40,8 +40,9 @@ module.exports = {
       colors: {
         text: "#1b191d",
         dark: "#2b3246",
-        primary: "#52b7c1",
-        secondary: "#f9b31d",
+        primary: "#577E27",
+        secondary: "#A1BF47",
+        light: "#96AA7C",
         body: "#fff",
       },
       fontSize: {
