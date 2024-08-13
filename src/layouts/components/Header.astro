@@ -5,7 +5,10 @@ import { Image } from "astro:assets";
 
 <section>
   <div class="relative pt-24 pb-12 bg-no-repeat md:pt-32 md:pb-0" style="">
-    <div class="absolute top-0 bottom-0 left-0 w-8/12 h-full bg-primary"></div>
+    <div
+      class="absolute top-0 bottom-0 left-0 w-full h-full md:w-8/12 bg-primary"
+    >
+    </div>
     <div class="container relative mx-auto">
       <div class="flex items-center justify-center">
         <div class="grid grid-cols-12 gap-8">
@@ -37,9 +40,7 @@ import { Image } from "astro:assets";
               </p>
             </div>
           </div>
-          <div
-            class="relative z-10 hidden col-span-12 pb-20 md:col-span-6 md:block"
-          >
+          <div class="relative z-10 col-span-12 pb-20 md:col-span-6 md:block">
             <Image class="shadow-sm" src={headerImg} width={418 * 2} alt="" />
           </div>
         </div>

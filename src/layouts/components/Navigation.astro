@@ -27,11 +27,9 @@ const { navbg = "bg-transparent" } = Astro.props;
   });
 </script>
 
-<header
-  class=`absolute  top-0 left-0 right-0 z-30 header font-heading ${navbg}`
->
+<header class=`absolute top-0 left-0 right-0 z-30 header font-heading ${navbg}`>
   <nav
-    class="container relative flex flex-wrap items-center justify-between navbar bg-light"
+    class="container relative flex flex-wrap items-center justify-between py-2 lg:py-0 navbar bg-light"
   >
     <!-- logo -->
     <div class="order-0">
@@ -57,7 +55,7 @@ const { navbg = "bg-transparent" } = Astro.props;
 
     <ul
       id="nav-menu"
-      class="hidden w-full lg:flex lg:w-auto lg:space-x-2 lg:pb-0 lg:items-center xl:space-x-8 bg-secondary lg:bg-transparent"
+      class="order-3 hidden w-full pt-3 lg:pt-0 lg:order-none lg:flex lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 bg-light lg:bg-transparent"
     >
       {
         main.map((menu) => (
@@ -75,7 +73,7 @@ const { navbg = "bg-transparent" } = Astro.props;
         ))
       }
     </ul>
-    <div>
+    <div class="hidden lg:block">
       <a
         href="#kontakt"
         class="px-5 py-2.5 font-medium tracking-wider text-white uppercase transition bg-primary border border-primary hover:text-white hover:border-white hover:bg-transparent hover:font-bold md:hover:font-medium auto-close-nav"
