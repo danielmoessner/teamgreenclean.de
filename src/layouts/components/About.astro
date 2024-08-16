@@ -1,5 +1,4 @@
 ---
-import Heading from "./Heading.astro";
 import image1 from "@/images/A7400623.jpg";
 import { Image } from "astro:assets";
 ---
@@ -9,20 +8,6 @@ import { Image } from "astro:assets";
     <div class="grid gap-8 md:grid-cols-2">
       <div class="">
         <Image class="shadow-sm" src={image1} width={418 * 2} alt="" />
-        <div class="mt-8" id="einsatzgebiete">
-          <h3
-            class="inline p-0.5 px-2 text-xl font-medium tracking-wide text-white uppercase box-decoration-clone bg-primary"
-          >
-            Einsatzgebiete
-          </h3>
-          <ul class="pl-6 space-y-0.5 mt-1 list-disc">
-            <li>Dithmarschen Komplett</li>
-            <li>Nordfriesland</li>
-            <li>St.Peter-Ording</li>
-            <li>Büsum</li>
-            <li>Eiderstedt und Umgebung</li>
-          </ul>
-        </div>
       </div>
       <div class="">
         <h2 class="text-5xl font-bold text-primary">Über mich</h2>

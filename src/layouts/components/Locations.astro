@@ -1,0 +1,49 @@
+---
+// import { Image } from "astro:assets";
+
+const locations = [
+  {
+    name: "Dithmarschen Komplett",
+  },
+  {
+    name: "Nordfriesland",
+  },
+  {
+    name: "St.Peter-Ording",
+  },
+  {
+    name: "Büsum",
+  },
+  {
+    name: "Eiderstedt und Umgebung",
+  },
+];
+---
+
+<section class="pb-32 bg-primary" id="einsatzgebiete">
+  <div class="container">
+    <div class="flex justify-between">
+      <h2 class="text-5xl font-bold text-white">Einsatzgebiete</h2>
+    </div>
+    <!-- <Image
+      src={s.image}
+      alt={s.title}
+      width={418 * 2}
+      class="object-cover object-top w-full h-auto aspect-square"
+    /> -->
+
+    <div class="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        locations.map((s, i) => (
+          <div class="bg-white">
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-primary">{s.name}</h3>
+              <p class="text-gray-600" />
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+<div class="w-full h-64 -mt-56 bg-primary"></div>
