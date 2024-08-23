@@ -1,5 +1,6 @@
 ---
-
+import { Image } from "astro:assets";
+import logo from "@/images/green-clean.jpeg";
 ---
 
 <div class="flex items-center">
@@ -8,7 +9,7 @@
       <div
         class="px-0 text-3xl font-bold leading-none tracking-wide text-left text-white font-heading"
       >
-        GreenClean
+        <Image src={logo} alt="Green Clean Logo" height={58} />
       </div>
     </div>
   </a>
