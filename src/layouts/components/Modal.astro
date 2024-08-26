@@ -4,7 +4,7 @@ const { id } = Astro.props;
 
 <dialog
   id={id}
-  class="fixed p-5 m-0 transform -translate-x-1/2 -translate-y-1/2 shadow left-1/2 top-1/2"
+  class="fixed p-5 m-0 transform -translate-x-1/2 -translate-y-1/2 rounded shadow left-1/2 top-1/2"
 >
   <div class="prose">
     <slot name="main" />
@@ -12,7 +12,7 @@ const { id } = Astro.props;
   <form method="dialog">
     <button
       type="submit"
-      class="absolute top-0 right-0 p-2 text-gray-500 transition focus:outline-none hover:bg-gray-200"
+      class="absolute top-0 right-0 p-2 text-gray-500 transition rounded-bl focus:outline-none hover:bg-gray-200"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
