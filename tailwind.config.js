@@ -39,12 +39,12 @@ module.exports = {
       }),
       colors: {
         text: "#1b191d",
-        dark: "#2b3246",
-        primary: "#577E27",
+        dark: "#1c4a36",
+        primary: "#04693b",
         secondary: "#A1BF47",
         light: "#96AA7C",
         body: "#fff",
-        background: "rgb(240,249,245)",
+        background: "#f1f9e8",
       },
       fontSize: {
         base: font_base + "px",
