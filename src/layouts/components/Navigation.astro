@@ -16,7 +16,7 @@ export interface NavigationLink {
 
 const { main }: { main: NavigationLink[] } = menu;
 const { pathname } = Astro.url;
-const { navbg = "bg-transparent" } = Astro.props;
+const { navbg = "bg-white" } = Astro.props;
 ---
 
 <script>
@@ -27,9 +27,11 @@ const { navbg = "bg-transparent" } = Astro.props;
   });
 </script>
 
-<header class=`absolute top-0 left-0 right-0 z-30 header font-heading ${navbg}`>
+<header
+  class=`absolute top-0 left-0 right-0 z-30 header font-heading border-b shadow sticky ${navbg}`
+>
   <nav
-    class="container relative flex flex-wrap items-center justify-between py-2 rounded-b lg:py-0 navbar bg-light"
+    class="container relative flex flex-wrap items-center justify-between py-2 rounded-b lg:py-0 navbar"
   >
     <!-- logo -->
     <div class="order-0">
@@ -55,14 +57,14 @@ const { navbg = "bg-transparent" } = Astro.props;
 
     <ul
       id="nav-menu"
-      class="order-3 hidden w-full pt-3 lg:pt-0 lg:order-none lg:flex lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 bg-light lg:bg-transparent"
+      class="order-3 hidden w-full pt-3 lg:pt-0 lg:order-none lg:flex lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 lg:bg-transparent"
     >
       {
         main.map((menu) => (
           <li class="nav-item">
             <a
               href={menu.url}
-              class={`p-3 text-white transition hover:text-opacity-80 tracking-wide flex items-center auto-close-nav ${
+              class={`p-3 text-dark transition hover:text-opacity-80 tracking-wide flex items-center auto-close-nav ${
                 (pathname === `${menu.url}/` || pathname === menu.url) &&
                 "active"
               }`}
