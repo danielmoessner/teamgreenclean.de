@@ -4,12 +4,9 @@ const { id } = Astro.props;
 
 <dialog
   id={id}
-  class="fixed p-5 m-0 transform -translate-x-1/2 -translate-y-1/2 rounded shadow left-1/2 top-1/2"
+  class="fixed m-0 transform -translate-x-1/2 -translate-y-1/2 rounded shadow left-1/2 top-1/2"
 >
-  <div class="prose">
-    <slot name="main" />
-  </div>
-  <form method="dialog">
+  <form method="dialog" class="sticky top-0 right-0">
     <button
       type="submit"
       class="absolute top-0 right-0 p-2 text-gray-500 transition rounded-bl focus:outline-none hover:bg-gray-200"
@@ -28,6 +25,11 @@ const { id } = Astro.props;
           d="M6 18 18 6M6 6l12 12"></path>
       </svg>
     </button>
+  </form>
+  <div class="px-5 pt-5 prose">
+    <slot name="main" />
+  </div>
+  <form method="dialog" class="px-5 pb-5">
     <button
       type="submit"
       onclick="document.getElementById('kontakt').scrollIntoView({behavior: 'smooth'})"
@@ -48,3 +50,14 @@ const { id } = Astro.props;
     background: rgba(0, 0, 0, 0.5);
   }
 </style>
+
+<script define:vars={{ id }}>
+  document.addEventListener("DOMContentLoaded", () => {
+    const dialog = document.getElementById(id);
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog) {
+        dialog.close();
+      }
+    });
+  });
+</script>
