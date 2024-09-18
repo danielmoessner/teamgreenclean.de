@@ -44,6 +44,7 @@ module.exports = {
         secondary: "#A1BF47",
         light: "#96AA7C",
         body: "#fff",
+        background: "rgb(240,249,245)",
       },
       fontSize: {
         base: font_base + "px",
