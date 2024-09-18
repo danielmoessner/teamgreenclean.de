@@ -114,33 +114,42 @@ const services = [
     <div class="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-2 lg:grid-cols-3">
       {
         services.map((s, i) => (
-          <div class="overflow-hidden bg-white rounded shadow-sm">
-            <Image
-              src={s.image}
-              alt={s.title}
-              width={418 * 2}
-              class="object-cover object-top w-full h-auto aspect-square"
-            />
-            <div class="p-6">
-              <h3 class="text-2xl font-bold text-primary">{s.title}</h3>
-              <p class="text-gray-600">{s.description}</p>
-              <button
-                class="mt-2 font-medium underline text-primary"
-                type="button"
-                onclick={`window.m${i}.showModal()`}
-              >
-                > Mehr dazu
-              </button>
-            </div>
+          <div class="">
+            <button
+              class="content-start block w-full h-full overflow-hidden text-left transition duration-500 bg-white rounded shadow-sm group hover:scale-105"
+              type="button"
+              onclick={`window.m${i}.showModal()`}
+            >
+              <div class="overflow-hidden">
+                <Image
+                  src={s.image}
+                  alt={s.title}
+                  width={418 * 2}
+                  class="object-cover object-top w-full h-auto overflow-hidden aspect-square"
+                />
+              </div>
+              <div class="h-[132px] p-6">
+                <h3 class="text-2xl font-bold text-primary group-hover:underline">
+                  {s.title}
+                </h3>
+                <p class="text-gray-600 line-clamp-2">{s.description}</p>
+              </div>
+            </button>
             <Modal id={`m${i}`}>
               <main slot="main" set:html={s.text} />
             </Modal>
           </div>
         ))
       }
-      <div class="bg-white rounded shadow-sm">
-        <div class="p-6">
-          <h3 class="text-2xl font-bold text-primary">Weitere Gebiete</h3>
+      <div class="">
+        <button
+          class="block w-full h-full p-6 text-left transition duration-500 bg-white rounded shadow-sm group hover:scale-105"
+          type="button"
+          onclick={`window.m6.showModal()`}
+        >
+          <h3 class="text-2xl font-bold text-primary group-hover:underline">
+            Weitere Gebiete
+          </h3>
           <p class="text-gray-600">
             <ul class="pl-5 mt-4 text-lg text-gray-600 list-disc">
               <li>Praxen- und Therapieräume</li>
@@ -152,15 +161,8 @@ const services = [
               <li>Sanitär</li>
               <li>Wäscheservice & Wäscheverleih</li>
             </ul>
-            <button
-              class="mt-2 font-medium underline text-primary"
-              type="button"
-              onclick={`window.m${6}.showModal()`}
-            >
-              > Mehr dazu
-            </button>
           </p>
-        </div>
+        </button>
         <Modal id={`m${6}`}>
           <main slot="main">
             <div class="mb-5 prose">
