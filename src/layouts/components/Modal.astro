@@ -4,7 +4,7 @@ const { id } = Astro.props;
 
 <dialog
   id={id}
-  class="fixed m-0 transform -translate-x-1/2 -translate-y-1/2 rounded shadow left-1/2 top-1/2"
+  class="fixed w-[calc(100%_-_20px)] m-0 transform -translate-x-1/2 max-w-2xl -translate-y-1/2 rounded shadow left-1/2 top-1/2"
 >
   <form method="dialog" class="sticky top-0 right-0">
     <button
@@ -17,7 +17,7 @@ const { id } = Astro.props;
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="size-6"
+        class="size-8 md:size-6"
       >
         <path
           stroke-linecap="round"
