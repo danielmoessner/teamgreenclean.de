@@ -101,6 +101,34 @@ const services = [
     </p>
     `,
   },
+  {
+    title: "Autoreinigung",
+    description: "",
+    image: image5,
+    text: `
+    <b>Autoreinigung</b>
+    <p>
+    Autoinnenreinigung von Green Clean: Frische und Sauberkeit für Ihr Fahrzeug.
+    </p>
+    <p>
+    Green Clean bietet professionelle Autoinnenreinigung in Dithmarschen und Nordfriesland. Unser Service sorgt für gründlich gereinigte Sitze, Teppiche und Armaturen – perfekt für ein gepflegtes Fahrerlebnis. Vertrauen Sie auf unsere Expertise und buchen Sie noch heute Ihre Autoinnenreinigung bei Green Clean!
+    </p>
+    `,
+  },
+  {
+    title: "Flächenreinigung",
+    description: "",
+    image: image5,
+    text: `
+    <b>Flächenreinigung</b>
+    <p>
+    Flächenreinigung von Green Clean: Saubere Pflaster, Terrassen, Auffahrten, Dächer und Dachrinnen.
+    </p>
+    <p>
+    Green Clean bietet professionelle Flächenreinigung für Pflaster, Terrassen, Auffahrten, Dächer und Dachrinnen in Dithmarschen und Nordfriesland. Wir entfernen gründlich Schmutz, Moos und Ablagerungen, um Ihre Außenbereiche und Dächer wieder in neuem Glanz erstrahlen zu lassen. Kontaktieren Sie uns noch heute und genießen Sie perfekte Sauberkeit mit Green Clean!
+    </p>
+    `,
+  },
 ];
 ---
 
@@ -145,7 +173,7 @@ const services = [
         <button
           class="block w-full h-full p-6 text-left transition duration-500 bg-white rounded shadow-sm group hover:scale-105"
           type="button"
-          onclick={`window.m6.showModal()`}
+          onclick={`window.m99.showModal()`}
         >
           <h3 class="text-2xl font-bold text-primary group-hover:underline">
             Weitere Gebiete
@@ -163,7 +191,7 @@ const services = [
             </ul>
           </p>
         </button>
-        <Modal id={`m${6}`}>
+        <Modal id="m99">
           <main slot="main">
             <div class="mb-5 prose">
               <h3>Nebenaufgabengebiete</h3>

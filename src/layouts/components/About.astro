@@ -1,6 +1,8 @@
 ---
 import image1 from "@/images/A7400623.jpg";
 import { Image } from "astro:assets";
+import kunde2 from "@/images/kunde2.png";
+import kunde3 from "@/images/kunde3.svg";
 ---
 
 <section class="bg-background" id="ueber-mich">
@@ -10,7 +12,7 @@ import { Image } from "astro:assets";
         <Image class="rounded shadow-sm" src={image1} width={418 * 2} alt="" />
       </div>
       <div class="">
-        <h2 class="text-5xl font-bold text-primary">Über mich</h2>
+        <h2 class="text-5xl font-bold text-primary">Über uns</h2>
         <div class="prose text-dark">
           <p class="mt-6">
             <b>
@@ -73,6 +75,28 @@ import { Image } from "astro:assets";
           für einen zuverlässigen Reinigungsservice … und alles wird clean!</b
         >
       </p>
+    </div>
+    <h2 class="mt-8 text-3xl font-bold text-primary">Unsere Kunden</h2>
+    <div class="flex flex-wrap gap-8 mt-8 md:gap-20">
+      <div class="flex items-center justify-center text-center">
+        <div class="text-2xl italic font-medium">Ferienwohnungen Heldt</div>
+      </div>
+      <div class="flex items-center justify-center">
+        <Image
+          src={kunde2}
+          alt="Appartements St. Peter-Ording"
+          width={200}
+          class="w-auto h-auto max-w-32"
+        />
+      </div>
+      <div class="flex items-center justify-center">
+        <Image
+          src={kunde3}
+          alt="Büsum Ferienwohnungen"
+          width={200}
+          class="w-auto h-auto max-w-32"
+        />
+      </div>
     </div>
   </div>
 </section>
